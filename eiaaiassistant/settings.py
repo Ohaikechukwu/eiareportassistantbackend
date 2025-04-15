@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*qud+m2)h)$x7qy+s)2@@rex)y6x@1aa7vhz&21^5h$vm1=!4s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eiareportassistantbackend.onrender.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['eiareportassistantbackend.onrender.com', 'localhost']
 
 
 # Application definition
