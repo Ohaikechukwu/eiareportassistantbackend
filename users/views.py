@@ -6,7 +6,7 @@ from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from .serializers import UserRegistrationSerializer, CustomTokenObtainPairSerializer
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.views import APIView
 from .authentication import CustomJWTAuthentication
 
@@ -18,6 +18,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 User = get_user_model()
 
 class RegisterView(generics.CreateAPIView):
+    permission_classes = [AllowAny]
     queryset = User.objects.all()
     serializer_class = UserRegistrationSerializer
     
