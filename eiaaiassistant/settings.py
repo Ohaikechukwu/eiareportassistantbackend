@@ -95,8 +95,7 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://eiareportassistant.vercel.app/",
-    "eiareportassistant.vercel.app/"
+    "https://eiareportassistant.vercel.app",
     ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_EXPOSE_HEADERS = ['Content-Type', 'X-CSRFToken']
